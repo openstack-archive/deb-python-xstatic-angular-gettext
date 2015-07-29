@@ -1,0 +1,2 @@
+version=3
+http://pypi.debian.net/XStatic-Angular-Gettext/XStatic-Angular-Gettext-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
