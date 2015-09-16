@@ -1,3 +1,9 @@
+python-xstatic-angular-gettext (2.1.0.2-2) unstable; urgency=medium
+
+  * Do not delete the data folder, use a symlink of angular-gettext.js there.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 16 Sep 2015 21:29:21 +0000
+
 python-xstatic-angular-gettext (2.1.0.2-1) unstable; urgency=medium
 
   * Initial release. (Closes: #793950)

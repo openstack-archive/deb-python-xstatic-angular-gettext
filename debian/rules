@@ -18,7 +18,10 @@ override_dh_auto_install:
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python3-xstatic-angular-gettext; \
 	done
-	rm -rf $(CURDIR)/debian/python*-xstatic*/usr/lib/python*/dist-packages/xstatic/pkg/*/data
+	for i in $(CURDIR)/debian/python*-xstatic*/usr/lib/python*/dist-packages/xstatic/pkg/*/data/angular-gettext.js ; do \
+		rm $$i ; \
+		ln -s ../../../../../../../share/javascript/angular.js/angular-gettext.js $$i ; \
+	done
 	rm -rf $(CURDIR)/debian/python*-xstatic-angular-gettext/usr/lib/python*/dist-packages/*.pth
 
 override_dh_clean:
